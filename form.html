@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        h1{
+            color: yellowgreen;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+
+            
+        }
+        .hi{
+                border:5px solid teal;
+                width: 200px;
+                height: 30px;
+                border-radius: 10px;
+            }
+            ul li{
+                display: inline;
+                list-style: none;
+                padding: 15px;
+                margin: 15px;
+            }
+    </style>
+</head>
+<body>
+    <p><h1>How to design a form</h1></p>
+    <hr>
+    <form method="post" action="#">
+        <label for="username">Username</label>
+        <input type="text" name="username" maxlength="20"required placeholder="Enter your name" id="username" class="hi" >
+        <br>
+        <br>
+        <label for="upass">Password:</label>
+        <input type="password" name="code" placeholder="Enter a strong password" 
+        id="upass" class="hi">
+        <br>
+        <br>
+        <label for="duty">Role:</label>
+        <input type="text" name="Role" placeholder="Please enter the role you performed" required
+        id="duty" class="hi">
+        <br>
+        <br>
+        <label for="select">UserOptions</label>
+        <select name="Username" id="select">
+            <option value="#">Yes</option>
+            <option value="#">No</option>
+            <option value="#">Maybe</option>
+        </select>
+        <label for="cert">Upload Certificate</label>
+        <input type="file" name="cert" id="cert" class="hi">
+        <label for="Storytime">Tell Your Story:</label>
+        <br>
+       <textarea name="Story" id="Storytime" class="hi"></textarea>
+        <br> 
+        <br>
+        <input type="submit" name="submit" value="Cancel" style="color: rgb(250, 4, 4);background-color: rgb(11, 10, 10);  border-radius: 5px; border:5px solid; width:80px; height: 30px;" required class="hi">
+
+        <input type="submit" name="submit" value="LOGIN" style="color: yellowgreen;background-color:rgb(9, 10, 9);border-radius: 5px; border:5px solid; width: 80px; height: 30px;" required class="hi">
+
+        <br>
+        <br>
+        <input type="radio" id="option1" name="options" value="option1">
+        <label for="option1">Option 1</label>
+
+        <input type="radio" id="option2" name="options" value="option2">
+        <label for="option2">Option 2</label>
+        <input type="range" id="volume" name="volume" min="0" max="100" value="100">
+        <br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        
+        <br>
+        <br>
+        <input type="checkbox" id="option1" name="options" value="option1">
+<label for="option1">Option 1</label>
+
+<input type="checkbox" id="option2" name="options" >
+<label for="option2">Option 2</label>
+<br>
+<input type="date" id="date" name="date" value="2023-03-15">
+<br>
+<br>
+<input type="datetime-local" id="datetime" name="datetime" value="2023-03-15T14:30">
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    </form>
+
+    <ul>
+        <li>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact Us</a>
+        </li>
+    </ul>
+    <a href="try.html#form">Jump to table in try file</a>
+    <br>
+   
+
+    
+    
+</body>
+</html>
